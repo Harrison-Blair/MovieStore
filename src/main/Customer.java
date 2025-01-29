@@ -2,7 +2,7 @@ package main;
 
 import java.util.* ;
 
-class Customer {
+public class Customer {
 
     private String _name;
     private Vector _rentals = new Vector();

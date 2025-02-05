@@ -34,6 +34,8 @@ public class Vids {
       System.out.println ("\n"+cust1.statement()+"\n" );
       System.out.println ("\n"+cust2.statement()+"\n");
 
+      System.out.println ("\n"+cust1.htmlstatement()+"\n" );
+      System.out.println ("\n"+cust2.htmlstatement()+"\n");
    }
 
 }

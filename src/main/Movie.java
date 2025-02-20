@@ -4,24 +4,30 @@ import java.util.* ;
 
 public class Movie {
 
-   public static final int  CHILDRENS = 2;
-   public static final int  REGULAR = 0;
-   public static final int  NEW_RELEASE = 1;
-
    private String _title;
-   private int _priceCode;
+   private Price _price;
 
-   public Movie(String title, int priceCode) {
+   public Movie(String title, Price priceCode) {
       _title = title;
-      _priceCode = priceCode;
+      setPriceCode(priceCode);
    }
 
    public int getPriceCode() {
-      return _priceCode;
+      return _price.getPriceCode();
+   }
+   
+   @Deprecated
+   public int getFrequentRenterPoints(int daysRented) {
+	   return _price.getFrequentRenterPoints(daysRented);
    }
 
-   public void setPriceCode (int arg) {
-      _priceCode = arg;
+   @Deprecated
+   public double getPrice(int daysRented) {
+	   	return _price.getPrice(daysRented);
+	   }
+   
+   public void setPriceCode (Price price) {
+      _price = price;
    }
 
    public String getTitle() {

@@ -17,9 +17,9 @@ public class Vids {
       cust1 = new Customer("bob");
       cust2 = new Customer("ann");
 
-      mov1 = new Movie("dumbo", 2);
-      mov2 = new Movie("jaws", 0);
-      mov3 = new Movie("ghost", 1);
+      mov1 = new Movie("dumbo", new ChildrensPrice());
+      mov2 = new Movie("jaws", new RegularPrice());
+      mov3 = new Movie("ghost", new NewReleasePrice());
 
       ren1 = new Rental(mov1,2);
       ren2 = new Rental(mov2,5);

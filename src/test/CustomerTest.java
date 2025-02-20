@@ -1,3 +1,5 @@
+/* Written by Harrison Blair for Module-03-Assignment-1-Refactored Movie Store Project - Final Version */
+
 package test;
 
 import static org.junit.jupiter.api.Assertions.*;
